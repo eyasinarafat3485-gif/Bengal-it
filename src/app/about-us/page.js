@@ -1,4 +1,6 @@
+'use client'
 import Process from "@/components/Process";
+import CompanyStats from "./CompanyStats";
 
 export default function AboutUsPage() {
   return (
@@ -50,9 +52,10 @@ export default function AboutUsPage() {
           </div>
         </div>
       </div>
-      
+
       {/* Process workflow timeline */}
       <Process />
+      <CompanyStats />
     </div>
   );
 }

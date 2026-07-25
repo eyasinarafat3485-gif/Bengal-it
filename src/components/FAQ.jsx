@@ -40,7 +40,7 @@ export default function FAQ() {
     };
 
     return (
-        <section id="faq" className="relative py-24 md:py-32 bg-cyber-bg overflow-hidden border-t border-cyber-navy-light/10">
+        <section id="faq" className="relative py-24 md:py-32 bg-cyber-bg overflow-hidden">
             {/* Background glow effects */}
             <div className="absolute top-[20%] left-[-5%] w-[40vw] h-[40vw] rounded-full bg-tech-cyan/5 blur-[120px] pointer-events-none" />
             <div className="absolute bottom-[10%] right-[-5%] w-[35vw] h-[35vw] rounded-full bg-bengal-gold/5 blur-[120px] pointer-events-none" />
@@ -74,8 +74,8 @@ export default function FAQ() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.3, delay: index * 0.05 }}
                                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
-                                        ? "border-tech-cyan/50 bg-cyber-navy-dark/60 shadow-[0_0_20px_rgba(0,245,212,0.1)]"
-                                        : "border-cyber-navy-light/40 bg-cyber-navy-dark/20 hover:border-cyber-navy-light/80"
+                                    ? "border-tech-cyan/50 bg-cyber-navy-dark/60 shadow-[0_0_20px_rgba(0,245,212,0.1)]"
+                                    : "border-cyber-navy-light/40 bg-cyber-navy-dark/20 hover:border-cyber-navy-light/80"
                                     }`}
                             >
                                 <button
@@ -121,7 +121,7 @@ export default function FAQ() {
                 <div className="text-center mt-12 p-6 rounded-2xl border border-cyber-navy-light/30 bg-cyber-navy-dark/30 backdrop-blur-sm">
                     <p className="text-xs md:text-sm text-gray-400">
                         Have a question that isn't answered above?{" "}
-                        <a href="#contact" className="text-tech-cyan font-semibold hover:underline">
+                        <a href="/contact" className="text-tech-cyan font-semibold hover:underline">
                             Contact our solutions architect directly &rarr;
                         </a>
                     </p>

@@ -7,7 +7,7 @@ import { Code2 } from "lucide-react";
 
 export default function WhyChooseUs() {
     return (
-        <section className="relative py-24 bg-cyber-bg  overflow-hidden">
+        <section className="relative py-24 bg-cyber-bg overflow-hidden">
             {/* Background Subtle Glows */}
             <div className="absolute top-1/3 left-0 w-96 h-96 bg-tech-cyan/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="relative border-l-4 border-tech-cyan pl-6 py-1 my-6 text-gray-300 italic text-sm md:text-base leading-relaxed bg-cyber-navy-dark/20 rounded-r-xl"
                         >
-                            "Bengal-IT is a reliable software development agency based in Bangladesh, delivering excellence since <span className="text-tech-cyan font-semibold not-italic">2022</span>. Trusted by regional and global clients for modern web innovation, quality code, and seamless communication. We assemble top-tier engineering talent specializing in <span className="text-white font-semibold not-italic">MERN Stack, Full-Stack, Frontend engineering, and custom WordPress systems</span>, combining technical rigor with a client-first culture."
+                            "Bengal-IT is a reliable software development agency based in Bangladesh, delivering excellence since <span className="text-tech-cyan font-semibold not-italic">2023</span>. Trusted by regional and global clients for modern web innovation, quality code, and seamless communication. We assemble top-tier engineering talent specializing in <span className="text-white font-semibold not-italic">MERN Stack, Full-Stack, Frontend engineering, and custom WordPress systems</span>, combining technical rigor with a client-first culture."
                         </motion.blockquote>
 
                         {/* Paragraph 1 */}
@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-xs md:text-sm text-gray-400 leading-relaxed"
                         >
-                            Since our inception in 2022, we have delivered successful solutions across corporate platforms, e-commerce ecosystems, and custom web applications. Our experienced developers leverage technologies like <span className="text-tech-cyan">React, Next.js, Node.js, Tailwind CSS, and headless WordPress</span> to transform complex requirements into production-ready, high-performance web products.
+                            Since our inception in 2023, we have delivered successful solutions across corporate platforms, e-commerce ecosystems, and custom web applications. Our experienced developers leverage technologies like <span className="text-tech-cyan">React, Next.js, Node.js, Tailwind CSS, and headless WordPress</span> to transform complex requirements into production-ready, high-performance web products.
                         </motion.p>
 
                         {/* Paragraph 2 */}
@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
                                     <p className="text-[10px] text-gray-400">YOUR VISION, OUR CODE</p>
                                 </div>
                                 <span className="text-[10px] font-semibold text-tech-cyan bg-tech-cyan/10 px-2.5 py-1 rounded border border-tech-cyan/30">
-                                    Est. 2022
+                                    Est. 2023
                                 </span>
                             </div>
 

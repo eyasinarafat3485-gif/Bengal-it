@@ -1,8 +1,6 @@
-// src/components/WhatsAppButton.jsx
 "use client";
 
 import React from "react";
-// react-icons/fa6 থেকে স্ট্যান্ডার্ড WhatsApp আইকন ইমপোর্ট করা হয়েছে
 import { FaWhatsapp } from "react-icons/fa6";
 
 export default function WhatsAppButton() {

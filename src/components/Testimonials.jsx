@@ -49,7 +49,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative py-24 md:py-32 bg-cyber-bg overflow-hidden border-t border-cyber-navy-light/10">
+    <section id="testimonials" className="relative py-24 bg-cyber-bg overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-[30%] right-[-5%] w-[45vw] h-[45vw] rounded-full bg-tech-cyan/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[10%] left-[-5%] w-[40vw] h-[40vw] rounded-full bg-bengal-gold/5 blur-[120px] pointer-events-none" />
@@ -79,10 +79,10 @@ export default function Testimonials() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -15 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="p-8 md:p-12 rounded-3xl border border-cyber-navy-light/40 bg-cyber-navy-dark/30 backdrop-blur-md relative overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.3)]"
+              className="p-8 md:p-12 rounded-3xl border border-cyber-navy-light/40 bg-cyber-navy-dark/30 backdrop-blur-md relative overflow-hidden"
             >
               {/* Top Cyber Accents */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-tech-cyan/50 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-tech-cyan to-transparent" />
               <Quote className="absolute top-6 right-8 w-16 h-16 text-cyber-navy-light/10 pointer-events-none" />
 
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
@@ -136,9 +136,8 @@ export default function Testimonials() {
                 <button
                   key={idx}
                   onClick={() => setCurrentIndex(idx)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    currentIndex === idx ? "w-8 bg-tech-cyan" : "w-2 bg-cyber-navy-light/60 hover:bg-gray-400"
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${currentIndex === idx ? "w-8 bg-tech-cyan" : "w-2 bg-cyber-navy-light/60 hover:bg-gray-400"
+                    }`}
                   aria-label={`Go to slide ${idx + 1}`}
                 />
               ))}

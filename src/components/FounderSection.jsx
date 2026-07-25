@@ -3,7 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 // import { Linkedin, Quote, ArrowUpRight } from "lucide-react";
-import { FaLinkedin, FaQuoteRight, FaArrowRight } from "react-icons/fa6";
+import { FaLinkedin, FaQuoteRight, FaArrowRight, FaFacebook } from "react-icons/fa6";
+import Link from "next/link";
+import FounderWhatsAppLink from "./FounderWhatsAppLink";
 
 export default function FounderSection() {
     return (
@@ -46,7 +48,7 @@ export default function FounderSection() {
                                         rel="noreferrer"
                                         className="p-2 rounded-lg bg-slate-800 hover:bg-tech-cyan hover:text-black text-gray-300 transition-colors"
                                     >
-                                        <FaLinkedin className="w-4 h-4" />
+                                        <FaFacebook className="w-4 h-4" />
                                     </a>
                                 </div>
                             </div>
@@ -107,13 +109,7 @@ export default function FounderSection() {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="pt-2"
                         >
-                            <a
-                                href="#consultation"
-                                className="inline-flex items-center gap-2 text-sm font-semibold text-tech-cyan hover:underline group"
-                            >
-                                <span>Schedule a direct strategy call with leadership</span>
-                                <FaArrowRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                            </a>
+                            <FounderWhatsAppLink />
                         </motion.div>
 
                     </div>

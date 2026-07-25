@@ -49,16 +49,16 @@ export default function Stats() {
   const stats = [
     {
       icon: CheckCircle2,
-      value: "120+",
+      value: "370+",
       label: "Projects Delivered",
-      description: "Production web applications, AI models, and cloud systems completed on schedule.",
+      description: "Production web applications, AI models, secure, optimized and cloud systems completed on schedule.",
       color: "text-tech-cyan"
     },
     {
       icon: Users2,
-      value: "45+",
+      value: "110+",
       label: "Enterprise Clients",
-      description: "Trusted software partner for startups, regional brands, and global enterprises.",
+      description: "Trusted software partner for startups, regional brands, long tern collaboration business and global enterprises.",
       color: "text-bengal-gold"
     },
     {
@@ -66,7 +66,7 @@ export default function Stats() {
       value: "99.8%",
       label: "System Uptime SLA",
       description: "High-availability cloud infrastructure and zero-downtime microservices deployment.",
-      color: "text-blue-400"
+      color: "text-white"
     },
     {
       icon: Award,
