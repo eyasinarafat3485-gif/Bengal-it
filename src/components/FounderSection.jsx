@@ -7,7 +7,7 @@ import { FaLinkedin, FaQuoteRight, FaArrowRight } from "react-icons/fa6";
 
 export default function FounderSection() {
     return (
-        <section className="py-20 bg-[#070A13] relative overflow-hidden border-t border-slate-800/40">
+        <section className="py-20 bg-[#070A13] relative overflow-hidden ">
             {/* Ambient Background Glow */}
             <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[350px] h-[350px] bg-tech-cyan/10 blur-[120px] rounded-full pointer-events-none" />
 

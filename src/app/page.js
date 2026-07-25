@@ -8,6 +8,8 @@ import Stats from "@/components/Stats";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import LoadingSpinner from "./LoadingSpinner";
 import FounderSection from "@/components/FounderSection";
+import FAQ from "@/components/FAQ";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +33,8 @@ export default function Home() {
       <WhyChooseUs />
       <FounderSection />
       <Stats />
+      <Testimonials />
+      <FAQ />
     </div>
   );
 }

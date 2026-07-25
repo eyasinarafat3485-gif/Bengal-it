@@ -7,7 +7,7 @@ import { Code2 } from "lucide-react";
 
 export default function WhyChooseUs() {
     return (
-        <section className="relative py-24 bg-cyber-bg border-b border-cyber-navy-light/35 overflow-hidden">
+        <section className="relative py-24 bg-cyber-bg  overflow-hidden">
             {/* Background Subtle Glows */}
             <div className="absolute top-1/3 left-0 w-96 h-96 bg-tech-cyan/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -86,21 +86,21 @@ export default function WhyChooseUs() {
                         {/* White/Light Card Frame (Styled like the reference image) */}
                         <div className="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-2xl transition-all duration-300 hover:border-tech-cyan/40">
 
-                        {/* Image Container */}
-<div className="relative w-full h-[420px] rounded-xl overflow-hidden bg-cyber-navy-dark border border-cyber-navy-light/40 flex flex-col items-center justify-center group">
-    <img
-        src="/images/bengal-it-team.png"
-        alt="Bengal IT Software Engineers"
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-    />
+                            {/* Image Container */}
+                            <div className="relative w-full h-[420px] rounded-xl overflow-hidden bg-cyber-navy-dark border border-cyber-navy-light/40 flex flex-col items-center justify-center group">
+                                <img
+                                    src="/images/bengal-it-team.png"
+                                    alt="Bengal IT Software Engineers"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
 
-    {/* Hover Overlay - Text Badge Positioned Bottom Right */}
-    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
-        <span className="text-xs font-bold text-tech-cyan bg-cyber-navy-dark/90 px-3 py-1.5 rounded-lg border border-tech-cyan/30 shadow-md">
-            Bengal-IT Team
-        </span>
-    </div>
-</div>
+                                {/* Hover Overlay - Text Badge Positioned Bottom Right */}
+                                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                    <span className="text-xs font-bold text-tech-cyan bg-cyber-navy-dark/90 px-3 py-1.5 rounded-lg border border-tech-cyan/30 shadow-md">
+                                        Bengal-IT Team
+                                    </span>
+                                </div>
+                            </div>
 
                             {/* Branding Footer inside the Photo Frame */}
                             <div className="pt-4 pb-2 px-2 flex items-center justify-between border-t border-slate-800/80 mt-3">
