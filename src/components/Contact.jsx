@@ -41,15 +41,35 @@ export default function Contact() {
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-bengal-gold/20 bg-bengal-gold/5 text-bengal-gold text-xs font-semibold uppercase tracking-wider mb-4">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-tech-cyan/20 bg-tech-cyan/5 text-tech-cyan text-xs font-semibold uppercase tracking-wider mb-4"
+          >
             <span>Inquiry Engine</span>
-          </div>
-          <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-3xl md:text-5xl font-black text-white leading-tight"
+          >
             Initiate Your <span className="bg-gradient-to-r from-tech-cyan to-bengal-gold bg-clip-text text-transparent">Transformation</span>
-          </h2>
-          <p className="text-gray-400 mt-4 text-sm md:text-base">
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-gray-400 mt-4 text-sm md:text-base"
+          >
             Reach out to our software consultants. We typically analyze project scopes and return custom pricing details within 24 business hours.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
@@ -156,7 +176,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       className="px-4 py-3 rounded-xl border border-cyber-navy-light/60 bg-cyber-navy-dark/40 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan transition-colors"
-                      placeholder="e.g. Arafat Rahman"
+                      placeholder="John Doe"
                     />
                   </div>
 
@@ -170,7 +190,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
                       className="px-4 py-3 rounded-xl border border-cyber-navy-light/60 bg-cyber-navy-dark/40 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan transition-colors"
-                      placeholder="e.g. info@company.com"
+                      placeholder="john124@gmail.com"
                     />
                   </div>
                 </div>

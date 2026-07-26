@@ -1,61 +1,146 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Code2, 
-  Cpu, 
-  Cloud, 
-  ShieldCheck, 
-  LineChart, 
-  ArrowUpRight 
+import { useRouter } from "next/navigation";
+import {
+  Code2,
+  Layers,
+  Cpu,
+  Layout,
+  Palette,
+  Sparkles,
+  TrendingUp,
+  Video,
+  Server,
+  ImageIcon,
+  Film,
+  ArrowUpRight,
+  Globe
 } from "lucide-react";
 
 export default function Services() {
+  const router = useRouter();
+
   const services = [
     {
+      id: "01",
+      icon: Globe,
+      title: "WordPress Development",
+      description: "Custom WooCommerce stores, Elementor/Block themes, and high-performance, secure WordPress solutions.",
+      color: "from-blue-600/25 to-tech-cyan/20",
+      glowColor: "group-hover:border-blue-500/60",
+      iconColor: "text-blue-400",
+      capabilities: ["Custom Theme & Plugin Dev", "WooCommerce E-Commerce", "Elementor & Gutenberg", "Speed & Security Optimization"]
+    },
+    {
+      id: "02",
+      icon: Layers,
+      title: "SaaS Application Development",
+      description: "Multi-tenant, subscription-ready cloud platforms with automated billing, RBAC, and high scalability.",
+      color: "from-tech-cyan/25 to-bengal-gold/20",
+      glowColor: "group-hover:border-tech-cyan/60",
+      iconColor: "text-tech-cyan",
+      capabilities: ["Multi-Tenant Architecture", "Stripe / Payment Gateways", "User Auth & Roles (RBAC)", "Scalable Cloud Database"]
+    },
+    {
+      id: "03",
       icon: Code2,
-      title: "Enterprise Software Engineering",
-      description: "Custom architecture engineered to handle complex business flows and high transaction volume.",
+      title: "Full-Stack Web App Development",
+      description: "End-to-end modern web applications built using Next.js, Node.js, and complex API integrations.",
       color: "from-tech-cyan/20 to-tech-teal/20",
       glowColor: "group-hover:border-tech-cyan/50",
       iconColor: "text-tech-cyan",
-      capabilities: ["Microservices Architecture", "Next.js & React Applications", "Native Mobile Platforms", "High-Performance APIs"]
+      capabilities: ["Frontend & Backend Engineering", "REST APIs", "Database Systems (SQL/NoSQL)", "Real-time WebSockets"]
     },
     {
+      id: "04",
       icon: Cpu,
-      title: "AI, Cognitive & Data Systems",
-      description: "Build neural engines, automate decision pipelines, and extract insights from unstructured datasets.",
+      title: "Custom Plugin Development",
+      description: "Tailored plugins, extensions, and automated systems engineered for complex business logic.",
       color: "from-bengal-gold/20 to-amber-500/20",
       glowColor: "group-hover:border-bengal-gold/50",
       iconColor: "text-bengal-gold",
-      capabilities: ["Machine Learning & NLP", "Cognitive Automation", "Big Data Orchestration", "Predictive Analytics"]
+      capabilities: ["Custom API Integrations", "CMS Extension Build", "Workflow Automation", "Scalable Engine Design"]
     },
     {
-      icon: Cloud,
-      title: "Cloud & DevOps Architecture",
-      description: "Highly scalable, self-healing cloud setups with zero-downtime integration pipelines.",
+      id: "05",
+      icon: Layout,
+      title: "Landing Page Design",
+      description: "Conversion-optimized, ultra-fast landing pages crafted to turn visitors into paying clients.",
       color: "from-blue-500/20 to-tech-teal/20",
       glowColor: "group-hover:border-blue-500/50",
       iconColor: "text-blue-400",
-      capabilities: ["AWS / Azure / GCP Setup", "Kubernetes & Containers", "CI/CD Pipeline Automation", "Serverless Architectures"]
+      capabilities: ["High Converting UX", "A/B Testing Ready", "SEO & Speed Optimized", "Interactive Animations"]
     },
     {
-      icon: ShieldCheck,
-      title: "Cyber Security & Auditing",
-      description: "Protect intellectual assets and client transactions through rigorous zero-trust systems.",
-      color: "from-[#1c2541] to-cyber-navy-light/40",
-      glowColor: "group-hover:border-cyber-navy-light/80",
-      iconColor: "text-[#00B4D8]",
-      capabilities: ["Penetration Testing & Audits", "Zero-Trust Architecture", "Identity & Access Control", "Compliance (GDPR/ISO)"]
+      id: "06",
+      icon: Palette,
+      title: "Logo Design & Branding",
+      description: "Distinctive brand identity and vector logo systems tailored for corporate & digital authority.",
+      color: "from-purple-500/20 to-pink-500/20",
+      glowColor: "group-hover:border-purple-500/50",
+      iconColor: "text-purple-400",
+      capabilities: ["Brand Identity Systems", "Vector Art Architecture", "Minimalist & Modern", "Full Brand Guidelines"]
     },
     {
-      icon: LineChart,
-      title: "Digital Strategy & Consulting",
-      description: "Modernize legacy systems, design technology roadmaps, and align IT budgets with corporate targets.",
-      color: "from-tech-cyan/25 to-bengal-gold/15",
-      glowColor: "group-hover:border-tech-teal/50",
-      iconColor: "text-tech-teal",
-      capabilities: ["IT Infrastructure Auditing", "Legacy System Migration", "Product Scaling Blueprints", "Digital Workflow Audits"]
+      id: "07",
+      icon: Sparkles,
+      title: "Logo Animation",
+      description: "Dynamic logo motion intros designed to elevate video assets and high-end digital presentations.",
+      color: "from-bengal-gold/25 to-tech-cyan/15",
+      glowColor: "group-hover:border-bengal-gold/50",
+      iconColor: "text-bengal-gold",
+      capabilities: ["2D/3D Logo Motion", "Video Intro Sound FX", "4K Render Quality", "Social Media Asset Ready"]
+    },
+    {
+      id: "08",
+      icon: TrendingUp,
+      title: "Digital Marketing",
+      description: "Targeted digital acquisition campaigns and growth strategies to increase market revenue.",
+      color: "from-emerald-500/20 to-teal-500/20",
+      glowColor: "group-hover:border-emerald-500/50",
+      iconColor: "text-emerald-400",
+      capabilities: ["Performance Ads", "Search Engine Optimization", "Social Growth Strategy", "Conversion Analytics"]
+    },
+    {
+      id: "09",
+      icon: Video,
+      title: "Video Editing",
+      description: "Professional video production, color grading, and precise narrative pacing for media campaigns.",
+      color: "from-red-500/20 to-amber-500/20",
+      glowColor: "group-hover:border-red-500/50",
+      iconColor: "text-red-400",
+      capabilities: ["Corporate Ad Edits", "Color Grading & FX", "Audio Post-Production", "Short & Long Format"]
+    },
+    {
+      id: "10",
+      icon: Server,
+      title: "Domain & Hosting / DevOps",
+      description: "High-availability cloud setup, domain routing, and zero-downtime deployment pipelines.",
+      color: "from-tech-cyan/25 to-blue-600/20",
+      glowColor: "group-hover:border-tech-cyan/50",
+      iconColor: "text-tech-cyan",
+      capabilities: ["Vercel / AWS / VPS Setup", "SSL & Domain Config", "Database Backup Automation", "99.8% Uptime SLA"]
+    },
+    {
+      id: "11",
+      icon: ImageIcon,
+      title: "Graphic Design",
+      description: "High-impact visual media for digital marketing campaigns, UI mockups, and corporate assets.",
+      color: "from-indigo-500/20 to-tech-teal/20",
+      glowColor: "group-hover:border-indigo-500/50",
+      iconColor: "text-indigo-400",
+      capabilities: ["Social Media Banners", "Marketing Collaterals", "UI/UX Mockups", "Vector Assets"]
+    },
+    {
+      id: "12",
+      icon: Film,
+      title: "Motion Graphics",
+      description: "Immersive 2D/3D animation graphics designed for explainer videos and showcase reels.",
+      color: "from-bengal-gold/20 to-red-500/20",
+      glowColor: "group-hover:border-bengal-gold/50",
+      iconColor: "text-bengal-gold",
+      capabilities: ["Explainer Animations", "Kinetic Typography", "Product Motion Demos", "Custom Sound Design"]
     }
   ];
 
@@ -66,7 +151,7 @@ export default function Services() {
       <div className="absolute bottom-[10%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-bengal-gold/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.div
@@ -78,7 +163,7 @@ export default function Services() {
           >
             <span>Solutions Catalogue</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +173,7 @@ export default function Services() {
           >
             Services We <span className="bg-gradient-to-r from-tech-cyan to-bengal-gold bg-clip-text text-transparent">Architect</span>
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -96,31 +181,37 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-400 mt-4 text-base md:text-lg"
           >
-            We combine high-performance software engineering with deep local and global consulting experience to deliver digital ecosystems.
+            We combine high-performance full-stack engineering with deep digital strategy to build end-to-end modern ecosystems.
           </motion.p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid (12 Items) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => {
             const IconComponent = service.icon;
-            
+
             return (
               <motion.div
-                key={service.title}
+                key={service.id + service.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="group relative flex flex-col justify-between p-8 rounded-2xl border border-cyber-navy-light/40 bg-cyber-navy-dark/30 hover:bg-cyber-navy-dark/65 hover:shadow-[0_20px_40px_rgba(7,10,19,0.5)] transition-all duration-300 overflow-hidden cursor-default"
+                transition={{ duration: 0.5, delay: idx * 0.05 }}
+                onClick={() => router.push("/contact")}
+                className="group relative flex flex-col justify-between p-8 rounded-2xl border border-cyber-navy-light/40 bg-cyber-navy-dark/30 hover:bg-cyber-navy-dark/65 hover:shadow-[0_20px_40px_rgba(7,10,19,0.5)] transition-all duration-300 overflow-hidden cursor-pointer h-full"
               >
                 {/* Glow Border Effect */}
-                <div className={`absolute inset-0 border border-transparent rounded-2xl transition-colors duration-500 ${service.glowColor}`} />
+                <div className={`absolute inset-0 border border-transparent rounded-2xl transition-colors duration-500 pointer-events-none ${service.glowColor}`} />
 
                 <div>
-                  {/* Icon Badge */}
-                  <div className={`relative inline-flex items-center justify-center p-4 rounded-xl bg-gradient-to-tr ${service.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className={`w-6 h-6 ${service.iconColor}`} />
+                  {/* Top Bar: Icon Badge & Serial ID */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div className={`relative inline-flex items-center justify-center p-4 rounded-xl bg-gradient-to-tr ${service.color} group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent className={`w-6 h-6 ${service.iconColor}`} />
+                    </div>
+                    <span className="text-xs font-mono font-bold tracking-widest text-gray-500 group-hover:text-tech-cyan transition-colors">
+                      /{service.id}
+                    </span>
                   </div>
 
                   {/* Title */}
@@ -144,11 +235,16 @@ export default function Services() {
                   </ul>
                 </div>
 
-                {/* Bottom CTA trigger */}
-                <div className="flex items-center gap-2 text-xs font-semibold text-tech-cyan tracking-wider uppercase group-hover:text-white transition-colors duration-300 mt-auto">
+                {/* Bottom Text */}
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-tech-cyan tracking-wider uppercase group-hover:text-white transition-colors duration-300 mt-auto">
                   <span>Architect Solution</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
+
+                {/* Card Right-Bottom Hover Pop-up Tooltip */}
+                <span className="absolute bottom-7 right-7 px-3 py-1.5 rounded-md bg-slate-900/90 border border-slate-700/80 text-tech-cyan text-xs font-semibold tracking-wide whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none shadow-lg z-20 backdrop-blur-sm">
+                  Contact Us
+                </span>
               </motion.div>
             );
           })}
