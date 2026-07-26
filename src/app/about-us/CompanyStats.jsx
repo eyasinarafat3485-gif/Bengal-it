@@ -19,15 +19,16 @@ const zigzagPerformanceData = [
     { year: '2026', projects: 370, clients: 110, uptime: 99.8, rating: 4.9 },
 ];
 
-// --- Custom Tooltip Component for Unique Dynamic Text Colors ---
 const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
+        const sortedPayload = [...payload].sort((a, b) => b.value - a.value);
+
         return (
             <div className="bg-[#0f172a] border border-slate-700 p-4 rounded-xl shadow-2xl space-y-2 font-sans">
                 <p className="text-white font-bold text-sm border-b border-slate-800 pb-1">
                     Year: {label}
                 </p>
-                {payload.map((entry, index) => (
+                {sortedPayload.map((entry, index) => (
                     <div key={`item-${index}`} className="flex items-center gap-2 text-xs font-semibold">
                         <span
                             className="w-2.5 h-2.5 rounded-full inline-block"
@@ -65,7 +66,7 @@ export default function ProfessionalZigzagChart() {
     return (
         <section
             ref={containerRef}
-            className="bg-[#050B14] p-6 sm:p-10 rounded-2xl border border-slate-800/80 text-white font-sans max-w-7xl mx-auto my-8 shadow-2xl"
+            className="bg-[#050B14] mb-24 p-6 sm:p-10 rounded-2xl border border-slate-800/80 text-white font-sans max-w-6xl mx-auto my-8 shadow-2xl"
         >
             {/* Header Section */}
             <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
