@@ -315,17 +315,14 @@ export default function Contact() {
   });
   const [loading, setLoading] = useState(false);
 
-  // ১. ম্যাপ লিংক ওপেন করার হ্যান্ডলার (URL স্ট্যাটাসবার থেকে হাইড থাকবে)
   const handleMapClick = () => {
     window.open("https://www.google.com/maps/search/?api=1&query=Mirpur+11+Dhaka+Bangladesh", "_blank", "noopener,noreferrer");
   };
 
-  // ২. মেল ক্লায়েন্ট ওপেন করার হ্যান্ডলার
   const handleMailClick = () => {
     window.location.href = "mailto:eyasinwebdev@gmail.com";
   };
 
-  // ৩. ডিরেক্ট কল হ্যান্ডলার
   const handlePhoneClick = () => {
     window.location.href = "tel:+8801793679254";
   };
@@ -384,7 +381,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-tech-cyan/20 bg-tech-cyan/5 text-tech-cyan text-xs font-semibold uppercase tracking-wider mb-4"
           >
             <span>Inquiry Engine</span>
@@ -394,7 +391,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-3xl md:text-5xl font-black text-white leading-tight"
           >
             Initiate Your <span className="bg-gradient-to-r from-tech-cyan to-bengal-gold bg-clip-text text-transparent">Transformation</span>
@@ -404,7 +401,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-gray-400 mt-4 text-sm md:text-base"
           >
             Reach out to our software consultants. We typically analyze project scopes and return custom pricing details within 24 business hours.

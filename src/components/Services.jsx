@@ -158,7 +158,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-tech-cyan/20 bg-tech-cyan/5 text-tech-cyan text-xs font-semibold uppercase tracking-wider mb-4"
           >
             <span>Solutions Catalogue</span>
@@ -168,7 +168,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-3xl md:text-5xl font-black text-white leading-tight"
           >
             Services We <span className="bg-gradient-to-r from-tech-cyan to-bengal-gold bg-clip-text text-transparent">Architect</span>
@@ -178,7 +178,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-gray-400 mt-4 text-base md:text-lg"
           >
             We combine high-performance full-stack engineering with deep digital strategy to build end-to-end modern ecosystems.
