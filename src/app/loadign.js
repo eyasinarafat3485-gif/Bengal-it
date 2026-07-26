@@ -3,10 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const LoadingSpinner = () => {
+export default function Loading() {
     return (
         <div className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#070A13]/90 backdrop-blur-md transition-all duration-300">
-
             {/* Outer Glowing Animated Ring */}
             <div className="relative flex items-center justify-center">
                 <motion.div
@@ -46,6 +45,4 @@ const LoadingSpinner = () => {
             </motion.div>
         </div>
     );
-};
-
-export default LoadingSpinner;
+}
