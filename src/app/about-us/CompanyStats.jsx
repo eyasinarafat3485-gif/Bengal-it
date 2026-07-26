@@ -14,8 +14,8 @@ import { useInView } from 'framer-motion';
 // Yearly growth data for all 4 metrics
 const zigzagPerformanceData = [
     { year: '2023', projects: 85, clients: 25, uptime: 98.5, rating: 4.2 },
-    { year: '2024', projects: 190, clients: 60, uptime: 99.1, rating: 4.6 },
-    { year: '2025', projects: 260, clients: 80, uptime: 98.9, rating: 4.5 },
+    { year: '2024', projects: 190, clients: 60, uptime: 99.1, rating: 4.5 },
+    { year: '2025', projects: 260, clients: 80, uptime: 98.9, rating: 4.7 },
     { year: '2026', projects: 370, clients: 110, uptime: 99.8, rating: 4.9 },
 ];
 
