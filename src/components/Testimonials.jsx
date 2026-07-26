@@ -49,10 +49,10 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative py-24 bg-cyber-bg overflow-hidden">
+    <section id="testimonials" className="relative pt-24 bg-cyber-bg overflow-hidden">
       {/* Background glow effects */}
-      <div className="absolute top-[30%] right-[-5%] w-[45vw] h-[45vw] rounded-full bg-tech-cyan/5 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[10%] left-[-5%] w-[40vw] h-[40vw] rounded-full bg-bengal-gold/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[30%] right-[-5%] w-[45vw] h-[45vw] rounded-full  blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[10%] left-[-5%] w-[40vw] h-[40vw] rounded-full  blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 md:px-12 relative z-10">
 
@@ -79,7 +79,7 @@ export default function Testimonials() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -15 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="p-8 md:p-12 rounded-3xl border border-cyber-navy-light/40 bg-cyber-navy-dark/30 backdrop-blur-md relative overflow-hidden"
+              className="p-8 md:p-12 rounded-3xl border border-tech-cyan/50 bg-cyber-navy-dark/30 backdrop-blur-md relative overflow-hidden"
             >
               {/* Top Cyber Accents */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-tech-cyan to-transparent" />

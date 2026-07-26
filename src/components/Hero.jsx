@@ -6,7 +6,7 @@ import {
   ArrowRight,
   Sparkles,
   Cpu,
-  Cloud,
+  Palette,
   Shield,
   Layers,
   Code2,
@@ -47,15 +47,15 @@ export default function Hero() {
       description: "Neural Networks"
     },
     {
-      id: "cloud",
-      name: "Cloud Architectures",
-      icon: Cloud,
+      id: "design",
+      name: "UI/UX & Product Design",
+      icon: Palette,
       color: "from-cyan-400 to-teal-400",
       shadow: "shadow-cyan-400/50",
       x: 82,
       y: 28,
       z: 20,
-      description: "AWS / Azure Scaling"
+      description: "Modern Experience"
     },
     {
       id: "data",
@@ -84,11 +84,11 @@ export default function Hero() {
   // SVG Connection Lines
   const connections = [
     { from: "ai", to: "hub" },
-    { from: "cloud", to: "hub" },
+    { from: "design", to: "hub" },
     { from: "data", to: "hub" },
     { from: "fullstack", to: "hub" },
     { from: "ai", to: "data" },
-    { from: "cloud", to: "fullstack" }
+    { from: "design", to: "fullstack" }
   ];
 
   if (!isMounted) {
@@ -99,7 +99,7 @@ export default function Hero() {
     <section className="relative min-h-screen w-full bg-[#070A13] text-white flex flex-col justify-center overflow-hidden pt-24 md:pt-28">
       {/* Ambient background glow elements */}
       <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-900/10 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-purple-900/10 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-purple-900/ blur-[10px] pointer-events-none" />
 
       {/* Tech Grid Background Lines */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f29370d_1px,transparent_1px),linear-gradient(to_bottom,#1f29370d_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" />
@@ -170,7 +170,7 @@ export default function Hero() {
               {/* Primary: Explore Our Solutions */}
               <a
                 href="#solutions"
-                className="relative group overflow-hidden px-8 py-4 rounded-xl font-semibold text-center text-sm tracking-wide text-black bg-cyan-400 transition-all duration-300 hover:bg-tech-cyan hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]  flex items-center justify-center gap-2"
+                className="relative group overflow-hidden px-8 py-4 rounded-xl font-semibold text-center text-sm tracking-wide text-black bg-tech-cyan transition-all duration-300 hover:bg-tech-cyan hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] flex items-center justify-center gap-2"
               >
                 <span>Explore Our Solutions</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -267,7 +267,6 @@ export default function Hero() {
                 >
                   <defs>
                     <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      {/* text-tech-cyan অ্যাপ্লাই করার জন্য currentColor ব্যবহার করা হয়েছে */}
                       <stop offset="0%" stopColor="currentColor" stopOpacity="0.2" />
                       <stop offset="50%" stopColor="#c084fc" stopOpacity="0.8" />
                       <stop offset="100%" stopColor="#818cf8" stopOpacity="0.1" />
