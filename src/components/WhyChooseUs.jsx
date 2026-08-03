@@ -1,4 +1,4 @@
-// src/components/WhyChooseUs.jsx
+
 "use client";
 
 import React from "react";

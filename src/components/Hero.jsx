@@ -17,12 +17,10 @@ export default function Hero() {
   const [hoveredNode, setHoveredNode] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
 
-  // Hydration issue সমাধান করার জন্য Mount চেক
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  // Nodes for the 3D Tech Grid/Network Mesh
   const nodes = [
     {
       id: "hub",
@@ -126,7 +124,7 @@ export default function Hero() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
                 </span>
                 <span className="text-xs md:text-sm font-medium tracking-wide text-gray-300">
-                  <strong className="text-tech-cyan font-semibold">150+</strong> Projects Delivered
+                  <strong className="text-tech-cyan font-semibold">370+</strong> Projects Delivered
                   <span className="mx-2 text-slate-700">|</span>
                   <strong className="text-purple-400 font-semibold">50+</strong> Tech Experts
                 </span>
@@ -169,7 +167,7 @@ export default function Hero() {
             >
               {/* Primary: Explore Our Solutions */}
               <a
-                href="#solutions"
+                href="#portfolio"
                 className="relative group overflow-hidden px-8 py-4 rounded-xl font-semibold text-center text-sm tracking-wide text-black bg-tech-cyan transition-all duration-300 hover:bg-tech-cyan hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] flex items-center justify-center gap-2"
               >
                 <span>Explore Our Solutions</span>
@@ -178,11 +176,11 @@ export default function Hero() {
 
               {/* Secondary: Book a Free Consultation */}
               <a
-                href="#consultation"
+                href="#contact"
                 className="relative group overflow-hidden px-8 py-4 rounded-xl font-semibold text-center text-sm tracking-wide text-gray-200 bg-transparent border border-white/10 hover:border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/5 flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
               >
                 <MessageSquare className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors" />
-                <span>Book a Free Consultation</span>
+                <span>Book a business Consultation</span>
               </a>
             </motion.div>
 

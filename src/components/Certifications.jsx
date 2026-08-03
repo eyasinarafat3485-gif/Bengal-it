@@ -1,4 +1,3 @@
-// src/components/Certifications.jsx
 "use client";
 
 import React from "react";

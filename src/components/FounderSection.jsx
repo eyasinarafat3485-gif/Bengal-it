@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-// import { Linkedin, Quote, ArrowUpRight } from "lucide-react";
 import { FaLinkedin, FaQuoteRight, FaArrowRight, FaFacebook } from "react-icons/fa6";
 import Link from "next/link";
 import FounderWhatsAppLink from "./FounderWhatsAppLink";
@@ -31,7 +30,7 @@ export default function FounderSection() {
                             {/* Main Image Frame */}
                             <div className="relative w-[280px] sm:w-[320px] h-[360px] sm:h-[400px] rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
                                 <img
-                                    src="/images/founder-ceo.png" // আপনার ছবি public/images/ ফোল্ডারে রাখবেন
+                                    src="/images/founder-ceo.png"
                                     alt="CEO of Bengal-IT"
                                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
                                 />

@@ -1,4 +1,3 @@
-// src/components/FounderWhatsAppLink.jsx
 "use client";
 
 import React from "react";
@@ -17,7 +16,6 @@ export default function FounderWhatsAppLink() {
 
     return (
         <div className="relative inline-block group">
-            {/* মূল বাটন বা টেক্সট */}
             <button
                 onClick={handleWhatsAppClick}
                 type="button"
